@@ -9,7 +9,7 @@ class LoginPage extends React.Component {
 
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/agent/dashboard");
+      this.props.history.push("/home");
     }
   }
   componentWillUnmount() {
@@ -18,7 +18,7 @@ class LoginPage extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/agent/dashboard");
+      this.props.history.push("/home");
     }
 
     if (nextProps.errors) {
@@ -34,6 +34,8 @@ class LoginPage extends React.Component {
     };
 
     this.props.loginUser(loginDetail);
+    localStorage.setItem('Email', this.state.email);
+
   };
 
   onInputChange = ({ currentTarget }) => {

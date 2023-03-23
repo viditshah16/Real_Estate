@@ -7,6 +7,7 @@ class Header extends React.Component {
   onlogoutClick = () => {
     this.props.clearCurrentUser();
     this.props.logoutUser();
+    localStorage.removeItem('Email');
   };
 
   render() {
@@ -18,7 +19,7 @@ class Header extends React.Component {
         <NavLink
           onClick={this.onlogoutClick}
           className="nav-item nav-link"
-          to="/"
+          to="/login"
         >
           Logout
         </NavLink>
@@ -37,7 +38,9 @@ class Header extends React.Component {
 
     return (
       <header style={{ width: "100%" }} className="bg-light">
-        <div className="container">
+        {
+          localStorage.getItem('Email') &&
+          <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <Link className="navbar-brand" to="/">
               NextHouse
@@ -73,6 +76,7 @@ class Header extends React.Component {
             </div>
           </nav>
         </div>
+        }
       </header>
     );
   }
