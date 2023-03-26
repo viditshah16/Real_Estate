@@ -115,11 +115,13 @@ router.post(
     };
 
     console.log("new data", PropertyDetails);
-
-    if (mongoose.Types.ObjectId.isValid(req.params.id)) {
+    console.log("After New Data")
+    if (mongoose.Types.ObjectId.isValid(req.params.id)) 
+    {
       const property = await Property.findOne({ _id: req.body.id });
-
+        console.log("before if")
       if (property) {
+        console.log("inside if")
         const newProperty = await Property.findByIdAndUpdate(
           req.body.id,
           { $set: { ...PropertyDetails } },
@@ -128,7 +130,8 @@ router.post(
 
         res.status(200).send(newProperty);
       }
-    } else {
+    } 
+    else {
       res.status(400).send("not found");
     }
   }

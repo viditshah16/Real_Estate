@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer bg-light mt-5">
         <div className="footer-copyright text-center py-3">
-          &copy; Final Project 
+           Dharmsinh Desai University, Nadiad 
         </div>
       </footer>
     );

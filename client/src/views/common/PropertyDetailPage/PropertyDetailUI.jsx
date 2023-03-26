@@ -20,7 +20,7 @@ class PropertyDetailUI extends React.Component {
     let renderContent;
     const { _id, email, name } = this.props.property.user;
 
-    const { about, mobile, skype } = this.props.agent;
+    const { about, mobile, skype  } = this.props.agent;
     let statusColor = status === "rent" ? "warning" : "success";
 
     renderContent = (

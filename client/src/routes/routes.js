@@ -21,10 +21,7 @@ class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        
-  
-    <Route exact path="/" component={localStorage.getItem('Email')==null?
-    LoginPage:HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />

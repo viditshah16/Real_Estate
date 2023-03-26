@@ -203,7 +203,7 @@ class AddPropertyPage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  lat, lng <i className=" fa fa-question-circle" />
+                  Find Coordinates <i className=" fa fa-question-circle" />
                 </a>
                 <div className="form-row">
                   <Input

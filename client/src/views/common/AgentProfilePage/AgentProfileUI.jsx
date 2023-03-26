@@ -3,7 +3,7 @@ import React from "react";
 class AgentProfileUI extends React.Component {
   render() {
     const { name, email } = this.props.profileData.user;
-    const { about, mobile, skype, socialMedia } = this.props.profileData;
+    const { about, mobile, skype, socialMedia } = this.ertyprops.profileData;
 
     let renderContent;
 

@@ -83,7 +83,7 @@ const ContactPage = () => {
           </form>
 
           <div className="center-on-small-only">
-            <Link to="" className="btn btn-block text-white btn-primary">
+            <Link to="" mailto="bhavinchavda096@gmail.com" className="btn btn-block text-white btn-primary">
               Send
             </Link>
           </div>
@@ -94,17 +94,19 @@ const ContactPage = () => {
           <ul className="contact-icons list-unstyled">
             <li>
               <i className="fa fa-map-marker fa-2x" />
-              <p>San Francisco, CA 94126, USA</p>
+              <p>Nadiad, Gujrat, India</p>
             </li>
 
             <li>
               <i className="fa fa-phone fa-2x" />
-              <p>+ 01 234 567 89</p>
+              <p>+91 9898418818</p>
+              <p>+91 8511872187</p>
             </li>
 
             <li>
               <i className="fa fa-envelope fa-2x" />
-              <p>contact@mdbootstrap.com</p>
+              <p>bhavinchavda096@gmail.com</p>
+              <p>viditshah2000@gmail.com</p>
             </li>
           </ul>
         </div>

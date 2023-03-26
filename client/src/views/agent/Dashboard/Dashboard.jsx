@@ -175,7 +175,7 @@ class Dashboard extends React.Component {
                       error={this.props.errors.mobile}
                     />
 
-                    <Input
+                    {/* <Input
                       label="Skype"
                       name="skype"
                       placeholder="user.auther5"
@@ -189,7 +189,7 @@ class Dashboard extends React.Component {
                       placeholder="your website url"
                       onChange={this.onInputChange}
                       value={this.state.website}
-                    />
+                    /> */}
                   </div>
                 </div>
                 {/* <!-- form right --> */}
