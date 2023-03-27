@@ -113,12 +113,12 @@ router.post(
         tv: req.body.tv ? true : false
       }
     };
-
+    // console.log("error11");
     console.log("new data", PropertyDetails);
 
-    if (mongoose.Types.ObjectId.isValid(req.params.id)) {
+    if (mongoose.Types.ObjectId.isValid(req.body.id)) {
       const property = await Property.findOne({ _id: req.body.id });
-
+      console.log("property:",property);
       if (property) {
         const newProperty = await Property.findByIdAndUpdate(
           req.body.id,
